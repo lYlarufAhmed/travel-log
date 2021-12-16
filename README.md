@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 With this app a user can log you all the travel related details. It has map to pin all the
 places that a user traveled. Currently, Only the frontend is ready.
-![Create Entry From](./create entry.png)
+![Create Entry From](create entry.png)
 
 
 ## Available Scripts
