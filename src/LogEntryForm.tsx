@@ -24,13 +24,17 @@ const LogEntryForm: FC<LogEntryFormProps> = ({location, onClose}): ReactElement 
             onClose();
         } catch (error) {
             console.error(error);
+            // @ts-ignore
             setError(error.message);
             setLoading(false);
         }
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="entry-form">
+        <form onSubmit={handleSubmit(onSubmit)} className="entry-form" style={{
+            display: 'flex',
+            flexDirection: 'column',
+        }}>
             {error ? <h3 className="error">{error}</h3> : null}
             <label htmlFor="title">Title</label>
             <input required {...register("title")} />
